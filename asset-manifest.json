@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9ba963d8.chunk.css",
+    "main.js": "/static/js/main.a1a7e79e.chunk.js",
+    "main.js.map": "/static/js/main.a1a7e79e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7cb8f52e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7cb8f52e.js.map",
+    "static/js/2.0488de64.chunk.js": "/static/js/2.0488de64.chunk.js",
+    "static/js/2.0488de64.chunk.js.map": "/static/js/2.0488de64.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.305a1ece471556e4ae49e45ef7f0f2a9.js": "/precache-manifest.305a1ece471556e4ae49e45ef7f0f2a9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9ba963d8.chunk.css.map": "/static/css/main.9ba963d8.chunk.css.map",
+    "static/js/2.0488de64.chunk.js.LICENSE.txt": "/static/js/2.0488de64.chunk.js.LICENSE.txt",
+    "static/media/bottle.png": "/static/media/bottle.372e4c21.png",
+    "static/media/bottlei.png": "/static/media/bottlei.42b22a56.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7cb8f52e.js",
+    "static/js/2.0488de64.chunk.js",
+    "static/css/main.9ba963d8.chunk.css",
+    "static/js/main.a1a7e79e.chunk.js"
+  ]
+}
