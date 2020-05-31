@@ -1,0 +1,25 @@
+.cart-base {
+  background-color: rgba(149, 250, 7, 0.5);
+}
+.cart-base .items{
+  background: darkmagenta;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding:20px;
+}
+.cart-total{
+  background-color: coral;
+  padding:20px;
+  text-align: left;
+  height:150px;
+}
+ .checkout{
+  background-color:magenta ;
+  height:130px;
+  padding:20px;
+}
+.footer{
+  background-color:rgb(161, 5, 161) ;
+  height:100px;
+}

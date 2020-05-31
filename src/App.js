@@ -1,26 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from "react";
+import "./App.css";
+import { PerfumeList,Cart} from "./components";
 
-function App() {
+const App =() =>{
+  const [perfumes] = useState([
+    {
+      id:1,
+      item: "Scent1",
+      description:
+        "Poets of Berlin:A blend of wild green orris,vanilla,blueberry,lemon and vetiver",
+      image: "",
+      price: "185.00",
+      addToCart: "",
+    },
+    {
+      id:2,
+      item: "Scent2",
+      description:
+        "Basso Continuo in Noto:A blend of Marsala cask whiskey,sandalwood,vetiver,leather",
+      image: "",
+      price: "145.00",
+      addToCart: "",
+    },
+    {
+      id:3,
+      item: "Scent3",
+      description:
+        "Toamasina Ensemble:An island blend of grapefruit,cardomom,vetiver and vanilla",
+      image: "",
+      price: "150.00",
+      addToCart: "",
+    },
+    {
+      id:4,
+      item: "Scent4",
+      description: "Jazz New York:A classic blend of patchouli,cedar and lime",
+      image: "",
+      price: "165.00",
+      addToCart: "",
+    },
+  ]);
+
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>SCENT EXPLORERS</h1>
+      <PerfumeList listOfPerfumes={perfumes}/> 
+      <Cart/>
     </div>
   );
-}
+};
 
 export default App;
