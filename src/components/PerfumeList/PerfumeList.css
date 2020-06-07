@@ -43,6 +43,7 @@
     outline:none;
     font-size:1.25em ;
     color:white;
+    cursor:pointer;
   }
   .perfume-list-base .remove{
     position: relative;
@@ -56,9 +57,14 @@
     font-size:1em ;
   }
   .perfume-list-base .react-numeric-input .qty{
-    font-size:1em ;
     font-weight: 900;
     width:100px;
     height:50px;
     outline:none;
+
+  }
+  .perfume-list-base .react-numeric-input{
+    border: 5px double magenta;
+    font-size:1.5em ;
+    cursor:pointer;
   }

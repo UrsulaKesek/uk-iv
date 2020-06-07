@@ -33,17 +33,17 @@
         padding:15px;
     }
 .counter{
-    background-color:rgb(10, 129, 4) ;
+    background-color: rgb(70, 119, 2);
     display:flex;
     flex-direction: row;
     justify-content: center;
     position:relative;
-    left:40px;
+    left:100px;
     align-items: center;
     width:250px;
-    color:black;
+    color:yellow;
     font-size:calc(16px + 3vw) ;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto';
 
 }
 .counter .add2{
@@ -53,8 +53,9 @@
     width:50px;
     height:60px;
     color:black;
-    font-size:calc(16px + 3vw) ;
-    font-family: 'Courier New', Courier, monospace;
+    font-weight:900;
+    font-size:calc(16px + 1.5vw) ;
+    font-family: 'Roboto';
 
 }
 .counter .minus2{
@@ -64,6 +65,8 @@
     width:50px;
     height:60px;
     color:black;
-    font-size:calc(16px + 3vw) ;
-    font-family: 'Courier New', Courier, monospace;
+    font-weight:900;
+    font-size:calc(16px + 1.5vw) ;
+    font-family: 'Roboto';
+    
 }
