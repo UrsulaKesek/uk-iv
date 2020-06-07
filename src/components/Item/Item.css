@@ -2,17 +2,17 @@
     display:flex;
     flex-direction:column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     margin:10px;
-    background-color: darkorange;
-    border:10px double  black;
+    background-color: black;
+    border:10px double  magenta;
     padding:20px;
-    width:450px;
+    width:250px;
 }
 .cart-base-item p{
     font-size:1.25em ;
     font-weight:700 ;
-    color:black;
+    color:white;
 }
 
     .cart-base-item Button{ 
@@ -33,40 +33,38 @@
         padding:15px;
     }
 .counter{
-    background-color: rgb(70, 119, 2);
+    background-color: rgb(9, 172, 231);
     display:flex;
     flex-direction: row;
     justify-content: center;
     position:relative;
-    left:100px;
     align-items: center;
     width:250px;
-    color:yellow;
-    font-size:calc(16px + 3vw) ;
+    font-size:calc(16px + 1vw) ;
     font-family: 'Roboto';
 
 }
 .counter .add2{
     position: relative;
     right:30px;
-    background-color:yellow ;
-    width:50px;
-    height:60px;
+    background-color:white ;
+    width:40px;
+    height:40px;
     color:black;
     font-weight:900;
-    font-size:calc(16px + 1.5vw) ;
+    font-size:calc(16px + 0.5vw) ;
     font-family: 'Roboto';
 
 }
 .counter .minus2{
     position: relative;
     left:30px;
-    background-color:yellow ;
-    width:50px;
-    height:60px;
+    background-color:white ;
+    width:40px;
+    height:40px;
     color:black;
     font-weight:900;
-    font-size:calc(16px + 1.5vw) ;
+    font-size:calc(16px) ;
     font-family: 'Roboto';
     
 }
