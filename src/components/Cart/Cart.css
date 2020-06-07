@@ -19,6 +19,16 @@
   height:130px;
   padding:20px;
 }
+.checkout Button{
+  width:120px;
+  height:120px;
+  border-radius:50% ;
+  background-color: rgb(206, 245, 12);
+  border:7px double #610226;
+  outline:none;
+  font-size:1.25em ;
+  color:Black;
+}
 .footer{
   background-color:rgb(161, 5, 161) ;
   height:100px;

@@ -6,7 +6,7 @@ const PerfumeList = ({ className, listOfPerfumes }) => (
   <table className={`perfume-list-base${className ? `${className}` : ""}`}>
     <thead>
       <tr>
-      <th>Item</th>
+      <th>Name</th>
       <th>Image</th>
       <th>Description</th>
       <th>Price</th>
@@ -14,11 +14,13 @@ const PerfumeList = ({ className, listOfPerfumes }) => (
       </tr>
     </thead>
     <tbody>
+      <>
     {listOfPerfumes.map((perfume)=>(
         <Perfume {...perfume}/>
     ))}
+
+    </>
     </tbody>
   </table>
 );
-
 export default PerfumeList;
