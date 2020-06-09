@@ -8,7 +8,7 @@ import './Counter.css';
     return(
         <>
         <button className="add2" onClick = {()=> setQuantity (quantity - 1)}>-</button>
-        <td className="qty">{quantity}</td>
+        <p className="qty">{quantity}</p>
         <button className="minus2" onClick = {()=> setQuantity (quantity + 1)}>+</button>
          </>
     )

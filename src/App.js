@@ -1,8 +1,9 @@
 import React,{useState} from "react";
 import "./App.css";
-import { PerfumeList,Cart} from "./components";
+import { PerfumeList,Cart,Header} from "./components";
 
-const App =() =>{
+const  App=()=>{
+
   const [perfumes] = useState([
     {
       objectID:1,
@@ -44,12 +45,20 @@ const App =() =>{
       addToCart: "",
     },
   ]);
-  
+  const [cart,SetCart]=useState([]);
+  const addToCart = (Perfume)=>{
+    SetCart(previousCart => [...previousCart,perfumes]);
+  };
+
   return (
     <div className="app">
-      <h1>SCENT EXPLORERS</h1>
-      <PerfumeList listOfPerfumes={perfumes}/> 
-      <Cart/>
+      <Header/>
+      <PerfumeList listOfPerfumes={perfumes} /> 
+      <Cart  
+       addToCart={addToCart}
+      // onRemoveItem={removeItem}
+      // cart={totalCart(cart)}
+      />
 
     </div>
   );

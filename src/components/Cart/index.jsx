@@ -4,18 +4,18 @@ import Button from "../Button";
 import {Counter} from "..";
 import {Item} from "..";
 
-const Cart = ({ className, name, }) => {
+
+const Cart = ({ className,item}) => {
   return (
     <div className={`cart-base${className ? `${className}` : ""}`}>
       <div>
         <h1>Items in Cart</h1>
-        <div className="items">
-          {name}
-          <Item />
-          <Item />
+        <div  key={Item.id} className="items">
+           <Item item={item}/>
         </div>
         <div className="cart-total">
-          <h3>Subtotal:{Counter}</h3>
+          <h3>Subtotal:</h3>
+          <Counter/>
           <h3>Delivery Charges:</h3>
           <h2>Total:</h2>
         </div>
@@ -25,9 +25,7 @@ const Cart = ({ className, name, }) => {
           <Button
             className="checkout"
             text="Let's Go"
-            onClick={function () {
-              alert("Byeeeee!  Come back soon");
-            }}
+            onClick={alert("Take this Item out of the Cart")} 
           ></Button>
         </div>
         <div className="footer">footer</div>

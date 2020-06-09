@@ -1,0 +1,12 @@
+.hiya {
+  background-color: rgba(149, 250, 7, 0.5);
+  width: 500px;
+  height: 180px;
+  margin: 20px;
+  border-radius: 90px 20px 90px 20px;
+  box-shadow: 5px 5px 5px rgb(4, 241, 230);
+  color: white;
+}
+h1 {
+  border: 2px double rgb(4, 241, 230);
+}
