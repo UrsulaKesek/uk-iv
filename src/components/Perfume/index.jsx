@@ -23,7 +23,9 @@ const Perfume = ({
       <td className="atc">
         QTY:
         <NumericInput className="qty" required type="number" min={0} max={100} label="quantity" />
-        <Button className="add" addToCart={()=> addToCart(item)}>Add To Cart</Button>
+        <Button className="add" onClick ={function() {
+              alert("Add this to the cart");
+            }}>Add To Cart</Button>
       </td>
     </tr>);
   };

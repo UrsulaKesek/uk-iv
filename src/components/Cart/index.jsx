@@ -1,21 +1,21 @@
 import React from "react";
 import "./Cart.css";
 import Button from "../Button";
-import {Counter} from "..";
-import {Item} from "..";
+import { Counter } from "..";
+import { Perfume } from "..";
+import Item from "../Item";
 
-
-const Cart = ({ className,item}) => {
+const Cart = ({ className,onClick }) => {
   return (
     <div className={`cart-base${className ? `${className}` : ""}`}>
       <div>
         <h1>Items in Cart</h1>
-        <div  key={Item.id} className="items">
-           <Item item={item}/>
+        <div key={Perfume.objectID} className="items">
+          <Item item={Item} />
         </div>
         <div className="cart-total">
           <h3>Subtotal:</h3>
-          <Counter/>
+          <Counter />
           <h3>Delivery Charges:</h3>
           <h2>Total:</h2>
         </div>
@@ -25,7 +25,9 @@ const Cart = ({ className,item}) => {
           <Button
             className="checkout"
             text="Let's Go"
-            onClick={alert("Take this Item out of the Cart")} 
+            onClick={function () {
+              alert("Byeeeee Come back soon!");
+            }}
           ></Button>
         </div>
         <div className="footer">footer</div>

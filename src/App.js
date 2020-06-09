@@ -4,9 +4,9 @@ import { PerfumeList,Cart,Header} from "./components";
 
 const  App=()=>{
 
-  const [perfumes] = useState([
+  const [perfumes,setPerfumes] = useState([
     {
-      objectID:1,
+      objectID:0,
       item: "Scent1",
       description:
         "Poets of Berlin:A blend of wild green orris,vanilla,blueberry,lemon and vetiver",
@@ -16,7 +16,7 @@ const  App=()=>{
       addToCart: "",
     },
     {
-      objectID:2,
+      objectID:1,
       item: "Scent2",
       description:
         "Basso Continuo in Noto:A blend of Marsala cask whiskey,sandalwood,vetiver,leather",
@@ -26,7 +26,7 @@ const  App=()=>{
       addToCart: "",
     },
     {
-      objectID:3,
+      objectID:2,
       item: "Scent3",
       description:
         "Toamasina Ensemble:An island blend of grapefruit,cardomom,vetiver and vanilla",
@@ -36,7 +36,7 @@ const  App=()=>{
       addToCart: "",
     },
     {
-      objectID:4,
+      objectID:3,
       item: "Scent4",
       description: "Jazz New York:A classic blend of patchouli,cedar and lime",
       image: "",
@@ -56,7 +56,7 @@ const  App=()=>{
       <PerfumeList listOfPerfumes={perfumes} /> 
       <Cart  
        addToCart={addToCart}
-      // onRemoveItem={removeItem}
+      // RemoveItem={removeItem}
       // cart={totalCart(cart)}
       />
 

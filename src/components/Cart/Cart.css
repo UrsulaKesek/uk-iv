@@ -1,12 +1,12 @@
 .cart-base {
   background-color: rgba(149, 250, 7, 0.5);
 }
-.cart-base .items{
-  background: darkmagenta;
+.items{
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
-  padding:20px;
+  height:700px;
+  width:300px;
 }
 .cart-total{
   background-color: coral;

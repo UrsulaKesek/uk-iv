@@ -1,9 +1,9 @@
 import React from "react";
-import './PerfumeList.css';
-import {Perfume} from '..';
-import {Button} from "..";
+import "./PerfumeList.css";
+import { Perfume } from "..";
+import { Button } from "..";
 
-const PerfumeList = ({ className,listOfPerfumes,addToCart }) => {
+const PerfumeList = ({ className, listOfPerfumes, addToCart }) => {
   return (<table className={`perfume-list-base${className ? `${className}` : ""}`}>
     <thead>
       <tr>
@@ -17,10 +17,10 @@ const PerfumeList = ({ className,listOfPerfumes,addToCart }) => {
     <tbody>
       <>
         {listOfPerfumes.map((perfume) => (<Perfume key={perfume.objectID} {...perfume}>
-          <Button className="add" onClick ={()=>addToCart (perfume)}>Add To Cart</Button>
-          </Perfume>
- 
-        ))}
+          <Button className="add" onClick={addToCart}>
+            Add To Cart
+          </Button>
+        </Perfume>))}
       </>
     </tbody>
   </table>);
